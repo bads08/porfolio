@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+</head>
+<body>
+<div class="menu-overlay animate" id="myMenu">
+	<span class="btn-close" onclick="menuClose()">&times;</span>
+	<ul class="menu-content">
+		<li class="menu-link">Link 1</li>
+		<li class="menu-link">Link 2</li>
+		<li class="menu-link">Link 3</li>
+		<li class="menu-link">Link 4</li>
+	</ul>
+</div>
+<div class="top-nav-container">
+	<div class="container">
+		<div class="nav-links-container">
+		<div class="top-nav-links-left">
+			<a href="" class="top-nav-content">MyPortfolio</a>
+		</div>
+		<div class="top-nav-links-right">
+			<a href="" class="top-nav-content space">My Skills</a>
+			<a href="" class="top-nav-content space">Services</a>
+			<a href="" class="top-nav-content">Contact</a>
+            <div class="dropdown-container">
+            	<a class="drop" onclick="showDrop()">Dropdown</a>
+            	<div class="dropdown-content" id="myDrop">
+            		<a href="">Link 1</a>
+            		<a href="">Link 2</a>
+            		<a href="">Link 3</a>
+            	</div>
+            </div>
+		</div>
+		<div class="menu">
+			<button class="btn-menu" onclick="menu()">Menu</button>
+		</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+	<div class="row row-1">
+		<div class="container">
+			<div class="section-1">
+				<div class="col col-50w">
+				<div class="text-container">
+					<h1 class="web-d">Web Designer</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique.</p>
+					<form>
+						<button class="hire-me">Hire me</button>
+					</form>
+				</div>
+				<div class="social-media-container">
+					<form>
+						<button class="social-media">fb</button>
+						<button class="social-media">ig</button>
+						<button class="social-media">wa</button>
+						<button class="social-media">sp</button>
+					</form>
+				</div>
+				</div>
+				<div class="col col-50w">
+					<div class="profile-pic-container">
+						<div class="profile-pic"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+	 <div class="section-2">
+	 	<center><h2>My Skills</h2></center>
+	 	<div class="row">
+	 		<div class="col col-33">	
+			<div class="card-skills-containe">
+				<div class="card-skills">
+					<img src="dist/img/default.png" class="card-image">
+					<h4>Html5</h4>
+				</div>
+		   </div>
+	 		</div>
+	 		<div class="col col-33">	
+			<div class="card-skills-containe">
+				<div class="card-skills">
+					<img src="dist/img/default.png" class="card-image">
+					<h4>Html5</h4>
+				</div>
+		   </div>
+	 		</div>
+	 		<div class="col col-33">	
+			<div class="card-skills-containe">
+				<div class="card-skills">
+					<img src="dist/img/default.png" class="card-image">
+					<h4>Html5</h4>
+				</div>
+		   </div>
+	 		</div>
+	 	</div>
+	 </div>		
+	</div>
+
+
+
+<div class="row row-3">
+	<div class="container">
+		<div class="section-3">
+		<div class="form-container">
+			<center><h2>Get in touch</h2></center>
+			<label>Fullname</label><br>
+			<input type="text" name="" placeholder="Fullname" class="input-size"><br><br>
+			<label>Email</label>
+			<input type="email" name="" placeholder="Email" class="input-size"><br><br>
+			<label>Message</label>
+			<textarea class="textarea-size"></textarea>
+			<center><button>Send</button></center>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="row row-footer">
+	<div class="container">
+		<div class="footer">
+			<div class="col col-a">
+				<h3>Logo here</h3>
+			</div>
+			<div class="col col-b">
+				<ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+				</ul>
+			</div>
+			<div class="col col-c">
+				<ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function menuClose() {
+		var btn_close = document.getElementById('myMenu');
+		btn_close.style.display = "none";
+	}
+
+	function menu() {
+		document.getElementById("myMenu").style.display="block";
+	}
+	function showDrop(){
+		document.getElementById("myDrop").classList.toggle("show");
+	}
+</script>
+</body>
+</html>
